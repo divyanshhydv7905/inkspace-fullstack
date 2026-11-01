@@ -1,0 +1,28 @@
+@import "tailwindcss";
+:root {
+  --bg-ivory: #FAF9F6;
+  --bg-surface: #FFFFFF;
+  --text-primary: #191919;
+  --text-secondary: #77736E;
+  --border-warm: #E9E6E0;
+  --accent-forest: #2D4A3E;
+}
+
+body {
+  background-color: var(--bg-ivory);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, .font-serif-editorial {
+  font-family: var(--font-playfair), Georgia, Cambria, "Times New Roman", serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
